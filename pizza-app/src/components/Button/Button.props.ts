@@ -2,5 +2,6 @@ import { ReactNode } from 'react';
 
 export interface ButtonProps {
 	children: ReactNode;
-	appearence?: 'big' | 'small';
+	className?: string;
+	appearance?: 'big' | 'small';
 }
