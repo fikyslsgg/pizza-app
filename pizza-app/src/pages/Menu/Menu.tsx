@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Headling from '../../components/Headling/Headling';
 import ProductCard from '../../components/ProductCart/ProductCard';
@@ -11,12 +12,7 @@ export function Menu() {
 
 	const getMenu = async () => {
 		try {
-			const res = await fetch(`${PREFIX}/products`);
-			if (!res.ok) {
-				return;
-			}
-
-			const data = (await res.json()) as Product[];
+			const { data } = await axios.get<Product[]>(`${PREFIX}/products`);
 			setProducts(data);
 		} catch (e) {
 			console.error(e);
