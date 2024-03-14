@@ -1,6 +1,8 @@
+import axios from 'axios';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { PREFIX } from './helpers/API.ts';
 import './index.css';
 import { Layout } from './layout/Menu/Layout.tsx';
 import { Cart } from './pages/Cart/Cart.tsx';
@@ -24,6 +26,10 @@ const router = createBrowserRouter([
 			{
 				path: '/product/:id',
 				element: <Product />,
+				loader: async ({ params }) => {
+					const { data } = await axios.get(`${PREFIX}/products/${params.id}`);
+					return data;
+				},
 			},
 		],
 	},
