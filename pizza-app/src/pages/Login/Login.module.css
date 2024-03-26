@@ -33,7 +33,13 @@
 	font-size: 14px;
 }
 
-.link a {
+.links a {
 	text-decoration: none;
 	color: var(--primary-color);
+}
+
+.error {
+	background: #ffc529;
+	color: white;
+	padding: 20px;
 }
