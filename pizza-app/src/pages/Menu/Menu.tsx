@@ -7,7 +7,7 @@ import { Product } from '../../interfaces/product.interface';
 import styles from './Menu.module.css';
 import { MenuList } from './MenuList/MenuList';
 
-export function Menu() {
+function Menu() {
 	const [products, setProducts] = useState<Product[]>([]);
 	const [isLoading, setIsLodaing] = useState<boolean>(false);
 	const [error, setError] = useState<string | undefined>();
@@ -46,3 +46,5 @@ export function Menu() {
 		</>
 	);
 }
+
+export default Menu;
