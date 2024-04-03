@@ -1,0 +1,91 @@
+.item {
+	display: flex;
+	gap: 20px;
+	max-width: 512px;
+	margin-bottom: 27px;
+}
+
+.actions {
+	margin-left: auto;
+	display: flex;
+	gap: 10px;
+	align-self: flex-start;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.name {
+	color: var(--text-color);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.price {
+	color: var(--primary-color);
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: normal;
+}
+
+.image {
+	width: 82px;
+	height: 82px;
+	background-size: cover;
+	filter: drop-shadow(0px 8px 25px rgba(244, 219, 196, 0.9));
+	border-radius: 20px;
+}
+
+.minus {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border: 1px solid white;
+	border-radius: 50%;
+	width: 29px;
+	height: 60px;
+	margin-top: 1px;
+}
+
+.plus {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border: 1px solid white;
+	border-radius: 50%;
+	width: 29px;
+	height: 37px;
+}
+
+.remove {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border: none;
+	width: 29px;
+	height: 25px;
+}
+
+.number {
+	color: var(--text-color);
+	font-size: 16;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+/* .plus-icon {
+	width: 100%;
+	height: 100%;
+}
+.minus-icon {
+	width: 100%;
+} */

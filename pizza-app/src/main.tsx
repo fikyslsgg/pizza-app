@@ -13,6 +13,7 @@ import { Error } from './pages/Error/Error.tsx';
 import { Login } from './pages/Login/Login';
 import { Product } from './pages/Product/Product.tsx';
 import { Register } from './pages/Register/Register.tsx';
+import { Success } from './pages/Success/Success.tsx';
 import { store } from './store/store.ts';
 
 const Menu = lazy(() => import('./pages/Menu/Menu.tsx'));
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
 			{
 				path: '/cart',
 				element: <Cart />,
+			},
+			{
+				path: '/success',
+				element: <Success />,
 			},
 			{
 				path: '/product/:id',
