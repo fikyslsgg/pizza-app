@@ -1,13 +1,13 @@
 export function loadState<T>(key: string): T | undefined {
 	try {
-		const jsonState = localStorage.getItem('key');
+		const jsonState = localStorage.getItem(key);
 		if (!jsonState) {
 			return undefined;
 		}
 		return JSON.parse(jsonState);
 	} catch (e) {
 		console.error(e);
-		undefined;
+		return undefined;
 	}
 }
 
