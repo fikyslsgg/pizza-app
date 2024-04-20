@@ -10,9 +10,16 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = {
+export const Small: Story = {
 	args: {
 		appearance: 'small',
+		children: 'Кнопка',
+	},
+};
+
+export const Big: Story = {
+	args: {
+		appearance: 'big',
 		children: 'Кнопка',
 	},
 };
