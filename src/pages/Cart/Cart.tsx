@@ -42,7 +42,7 @@ export function Cart() {
 	};
 
 	const checkout = async () => {
-		const { data } = await axios.post(
+		await axios.post(
 			`${PREFIX}/order`,
 			{
 				products: items,
